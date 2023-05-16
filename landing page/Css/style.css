@@ -1,0 +1,325 @@
+/* start variables */
+:root{
+    --main-color:#3064bd;
+    --secondary-color:#C2D4E0;
+    
+
+}
+/* end variables */
+
+
+/* start global rules */
+*{
+    box-sizing: border-box;
+    padding: 0PX;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+ 
+
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* phone */
+@media(max-width:767px){
+    
+}
+/* small */
+@media(min-width:768px){
+    .container{
+    width:750px;
+}
+}
+/* medium */
+@media(min-width:992px){
+    .container{
+        width:970px;
+    }
+}
+/* large */
+@media(min-width:1000px){
+    .container{
+        width:980px;
+    }
+}
+/* end global rules */
+/* start header */
+header{
+background-color: #3064bd;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header .logo {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+header nav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li a {
+    padding: 40px 10px;
+    display: block;
+   color: black;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+header .form{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+align-items: center;
+border: 15px;
+gap: 10px;
+}
+header .form .btn{
+height: 30px;
+width: 120px;
+background-color: #C2D4E0;
+border-radius: 20px;
+
+}
+
+/* end header */
+/* start landing section */
+.landing{
+    background-image: url(../Images/landing\ image\ .jpg);
+    background-size: cover;
+    height: calc(100vh - 96px);
+   
+    position: relative;
+}
+.landing .intro-text{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50% ,-50%);
+text-align: center;
+width: 320px;
+max-width: 100%;
+
+}
+
+.landing .intro-text h1{
+margin: 0px;
+font-weight: bold;
+font-size: 50px;
+
+}
+.landing .intro-text p{
+font-size: 20px;
+line-height: 1.8;
+}
+.landing .intro-text .btn{
+
+        height: 30px;
+        width: 120px;
+        background-color: var(--main-color);
+        border-radius: 20px;
+       margin:20px auto;
+}
+/* end landing section */
+
+/* start feature section  */
+.features{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+.features h1{
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 20px;
+}
+
+.features .feat{
+    padding: 20px;
+    text-align: center;
+}
+.features .feat i{
+    color: var(--main-color);
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.features .feat p{
+line-height: 1.8;
+font-size: 17px;
+color: black;
+}
+
+/* end feature section  */
+
+
+/* start works section  */
+.works{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--secondary-color);
+}
+.works h1{
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.works .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.works .work-content{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+}
+.works .work-content i{
+    color: var(--main-color);
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.works .work-content p{
+line-height: 1.8;
+font-size: 17px;
+color: black;
+}
+
+/* end works section  */
+/* start reviews */
+.reviews{
+    padding-top: 60px;
+    padding-bottom:60px;
+   
+}
+.reviews h1{
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.reviews .reviews-content{
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-gap: 30px;
+    
+    margin-top: 80px;
+   
+}
+.reviews .card{
+    background-color: white;
+   
+
+}
+.reviews .card img{
+    max-width: 100%;
+   
+}
+.reviews .card .info{
+    padding: 20px;
+}
+.reviews .card .info h3{
+margin: 0;
+/* padding-bottom: 20px; */
+}
+.reviews .card .info p{
+color: #777;
+line-height: 1.6;
+margin-bottom: 0;
+}
+/* end reviews */
+
+.started{
+    padding-top: 60px;
+    padding-bottom:60px;
+   
+
+}
+.started .info{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.started .info .label{
+font-size: 30px;
+font-weight: 800;
+letter-spacing: -2px;
+margin-bottom: 15px;
+
+}
+.started .info .btn{
+
+    height: 30px;
+    width: 120px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+   margin-top:40px;
+}
+/* Start footer */
+.footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--main-color);
+    text-align: center;
+}
+.footer .container{
+padding-top: 60px;
+padding-bottom: 60px;
+}
+.footer .logo{
+    margin-bottom: 20px;
+}
+.footer .content{
+text-transform: uppercase;
+padding: 20px;
+border-bottom: 1px solid black;
+width: fit-content;
+margin: 20px auto;
+}
+.footer .social-icon i{
+padding: 10px 15px ;
+
+}
+.footer .copyrigt{
+margin-top: 60px;
+}
+.footer .copyrigt span{
+    font-weight: bold;
+    color: var(--secondary-color)
+    
+}
+
+/* end footer */
